@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="img/generator.png" type="image/x-icon">
+
+    <title>Gerador de senhas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de senhas</h1>
+        <input type="text" placeholder="Clique no botão para gerar uma senha" id="display-password">
+        <div class="generate-container">
+            <select name="passwordLength" id="password-length">
+                <option value="0">Selecionar tamanho</option>
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+                <option value="12">12</option>
+                <option value="18">18</option>
+                <option value="30">30</option>
+
+            </select>
+            <button onclick="randomPassword()" id="botao">Gerar senha</button>
+        </div>
+        <p id="error-info"></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
